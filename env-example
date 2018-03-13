@@ -98,6 +98,11 @@ WORKSPACE_YARN_VERSION=latest
 WORKSPACE_TIMEZONE=UTC
 WORKSPACE_SSH_PORT=2222
 
+### Nuxt ###############################################################################################################
+
+NUXT_APPLICATION=../nuxt
+NUXT_PORT=3000
+
 ### PHP_FPM ############################################################################################################
 
 PHP_FPM_INSTALL_XDEBUG=false
