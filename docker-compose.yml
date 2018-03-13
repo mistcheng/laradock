@@ -66,6 +66,20 @@ services:
         - frontend
         - backend
 
+### Nuxt Container #######################################
+
+    nuxt:
+      build:
+        context: ./nuxt
+      volumes:
+        - ${NUXT_APPLICATION}:/app
+      ports:
+        - "${NUXT_PORT}:3000"
+      extra_hosts:
+        - "dockerhost:${DOCKER_HOST_IP}"
+      networks:
+        - frontend
+
 ### PHP-FPM Container #######################################
 
     php-fpm:
